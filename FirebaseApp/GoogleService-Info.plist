@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>967878283511-q3ni0be54gdocmfb6v6mq1ds5fvmmer1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.967878283511-q3ni0be54gdocmfb6v6mq1ds5fvmmer1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDLwJuIsgp7AaTnlBZoZ6jYyFr0Y-IBWEs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>967878283511</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.eduardo.FirebaseApp</string>
+	<key>PROJECT_ID</key>
+	<string>stravaapp-7c8ba</string>
+	<key>STORAGE_BUCKET</key>
+	<string>stravaapp-7c8ba.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:967878283511:ios:eb134dd1c0661e4f15c3f2</string>
+	<key>DATABASE_URL</key>
+	<string>https://stravaapp-7c8ba.firebaseio.com</string>
+</dict>
+</plist>
