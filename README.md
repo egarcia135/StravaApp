@@ -76,7 +76,6 @@ An app targeted to runner where they can find fellow runners and conversate.
 *Create Run
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
 <img src="images/Slava.png" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
