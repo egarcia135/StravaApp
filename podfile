@@ -10,4 +10,6 @@ target 'FirebaseApp' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod 'AlamofireImage'
+  pod 'MessageInputBar'
 end
