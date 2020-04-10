@@ -25,8 +25,8 @@ An app targeted to runner where they can find fellow runners and conversate.
 
 **Required Must-have Stories**
 
-* As a logged-in user, I want to login to see if my friends are out jogging.
-* As a logged-in user, I want to be able to see where my friends are currently jogging using the GPS live map. 
+- [ x ] User can log in using email and password
+- [ x ] User can sign up using email, password and upload avatar photo
 * As a logged-in, I want to be able to track my miles and stats to see my progress.
 * As a logged-in, see if there are any running events near me.
 * As a logged-in user, I want to be able to send instant messages to my friend.
@@ -162,3 +162,5 @@ Create an account
 Upload Run
 - (Create/post) Create a new run
 
+## App Walkthrough
+<img src='http://g.recordit.co/OOQqUzFnuo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
