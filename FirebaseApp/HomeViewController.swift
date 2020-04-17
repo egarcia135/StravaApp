@@ -16,8 +16,9 @@ class HomeViewController:UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func logoutButton(_ sender: Any) {
-        try! Auth.auth().signOut()
-        self.dismiss(animated: false, completion: nil)
+    @IBAction func handleLogout(_ sender:Any) {
+       try! Auth.auth().signOut()
+        print("Logged out")
     }
+    
 }

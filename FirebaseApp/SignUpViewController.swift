@@ -200,23 +200,37 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
                                 self.saveProfile(username: username, profileImageURL: url!) { success in
                                     if success {
                                         self.dismiss(animated: true, completion: nil)
+                                    } else {
+                                        self.resetForm()
                                     }
                                 }
                                 
                             } else {
                                 print("Error: \(error!.localizedDescription)")
+                                self.resetForm()
                             }
                         }
                     } else {
-                        // Error unable to upload profile image
+                        self.resetForm()
                     }
                     
                 }
                 
             } else {
-                print("Error: \(error!.localizedDescription)")
+                self.resetForm()
             }
         }
+    }
+    
+    
+    func resetForm() {
+        let alert = UIAlertController(title: "Error signing up", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
+        setContinueButton(enabled: true)
+        continueButton.setTitle("Continue", for: .normal)
+        activityView.stopAnimating()
     }
     
     
