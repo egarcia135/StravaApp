@@ -163,4 +163,4 @@ Upload Run
 - (Create/post) Create a new run
 
 ## App Walkthrough
-<img src='http://g.recordit.co/OOQqUzFnuo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/AASjQtD5Tk.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
