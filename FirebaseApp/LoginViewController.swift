@@ -154,6 +154,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
                 
                 self.resetForm()
             }
+            
         }
     }
     

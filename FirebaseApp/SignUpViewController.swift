@@ -180,9 +180,8 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         
         Auth.auth().createUser(withEmail: email, password: pass) { user, error in
             if error == nil && user != nil {
+                
                 print("User created!")
-                
-                
                 
                 // 1. Upload the profile image to Firebase Storage
                 
@@ -197,7 +196,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
                             if error == nil {
                                 print("User display name changed!")
                                 
-                                self.saveProfile(username: username, profileImageURL: url!) { success in
+                                self.saveProfile(username: username, email:email, profileImageURL: url!) { success in
                                     if success {
                                         self.dismiss(animated: true, completion: nil)
                                     } else {
@@ -213,14 +212,15 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
                     } else {
                         self.resetForm()
                     }
-                    
                 }
-                
             } else {
                 self.resetForm()
             }
         }
     }
+    
+    
+    
     
     
     func resetForm() {
@@ -259,12 +259,13 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         }
     }
     
-    func saveProfile(username:String, profileImageURL:URL, completion: @escaping ((_ success:Bool)->())) {
+    func saveProfile(username:String, email:String, profileImageURL:URL, completion: @escaping ((_ success:Bool)->())) {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         let databaseRef = Database.database().reference().child("users/profile/\(uid)")
         
         let userObject = [
             "username": username,
+            "email": email,
             "photoURL": profileImageURL.absoluteString
         ] as [String:Any]
         
