@@ -165,4 +165,5 @@ Upload Run
 
 ## App Walkthrough
 <img src='http://g.recordit.co/AASjQtD5Tk.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/wQIJGn1PCo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='http://g.recordit.co/cgS1Z0RHUP.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
