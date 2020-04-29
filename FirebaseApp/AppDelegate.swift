@@ -28,17 +28,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             if user != nil {
                 
-                
+                UserService.observeUserProfile(user!.uid) { userProfile in
+                    UserService.currentUserProfile = userProfile
+                }
+                    
                 let controller = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") as! UITabBarController
                 self.window?.rootViewController = controller
                 self.window?.makeKeyAndVisible()
                 print("Logged in")
-                
-                               
-                
-            
             } else {
-               let controller = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as! UIViewController
+                
+                UserService.currentUserProfile = nil
+                
+               let controller = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
                self.window?.rootViewController = controller
                self.window?.makeKeyAndVisible()
                 

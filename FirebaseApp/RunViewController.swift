@@ -20,32 +20,16 @@ class RunViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var paceField: UITextField!
     @IBOutlet weak var dismissButton: UIButton!
     
-    var uploadButton:RoundedWhiteButton!
-    var activityView:UIActivityIndicatorView!
+    @IBOutlet weak var uploadButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         
-        uploadButton = RoundedWhiteButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
-        uploadButton.setTitleColor(secondaryColor, for: .normal)
-        uploadButton.setTitle("Upload", for: .normal)
-        uploadButton.titleLabel?.font = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)
-        uploadButton.center = CGPoint(x: view.center.x, y: view.frame.height - uploadButton.frame.height - 24)
-        uploadButton.highlightedColor = UIColor(white: 1.0, alpha: 1.0)
-        uploadButton.defaultColor = UIColor.white
-        uploadButton.addTarget(self, action: #selector(handleUpload), for: .touchUpInside)
-        uploadButton.alpha = 0.5
-        view.addSubview(uploadButton)
-        setContinueButton(enabled: false)
-        
-        activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
-        activityView.color = secondaryColor
-        activityView.frame = CGRect(x: 0, y: 0, width: 50.0, height: 50.0)
-        activityView.center = uploadButton.center
-        
-        view.addSubview(activityView)
+        uploadButton.backgroundColor = secondaryColor
+        uploadButton.layer.cornerRadius = uploadButton.bounds.height / 2
+        uploadButton.clipsToBounds = true
         
         titleField.delegate = self
         whenField.delegate = self
@@ -53,22 +37,17 @@ class RunViewController: UIViewController, UITextFieldDelegate {
         distanceField.delegate = self
         paceField.delegate = self
         
-        titleField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
-        whenField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
-        timeField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
-        distanceField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
-        paceField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
-
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         titleField.becomeFirstResponder()
-        NotificationCenter.default.addObserver(self, selector:#selector(keyboardWillAppear), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        navigationController?.navigationBar.shadowImage = UIImage()
         
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
+    /*override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         titleField.resignFirstResponder()
         whenField.resignFirstResponder()
@@ -78,12 +57,7 @@ class RunViewController: UIViewController, UITextFieldDelegate {
         
         NotificationCenter.default.removeObserver(self)
     }
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        get {
-            return .lightContent
-        }
-    }
+    */
     
     @IBAction func handleDismissButton(_ sender: Any) {
         self.dismiss(animated: false, completion: nil)
@@ -91,34 +65,7 @@ class RunViewController: UIViewController, UITextFieldDelegate {
     
     
     
-    @objc func keyboardWillAppear(notification: NSNotification){
-        
-        let info = notification.userInfo!
-        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-        
-        uploadButton.center = CGPoint(x: view.center.x,
-                                        y: view.frame.height - keyboardFrame.height - 16.0 - uploadButton.frame.height / 2)
-        activityView.center = uploadButton.center
-    }
-    
-
-    
-    @objc func textFieldChanged(_ target:UITextField) {
-        let title = titleField.text
-        let when = whenField.text
-        let time = timeField.text
-        let distance = distanceField.text
-        let pace = paceField.text
-        
-        let formFilled = title != nil && title != "" && when != nil && when != ""
-            && time != nil && time != "" && distance != nil && distance != ""
-            && pace != nil && pace != ""
-        setContinueButton(enabled: formFilled)
-    }
-    
-    
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    /*func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         // Resigns the target textField and assigns the next textField in the form.
         
@@ -147,37 +94,33 @@ class RunViewController: UIViewController, UITextFieldDelegate {
         }
         return true
     }
+    */
     
-    /**
-     Enables or Disables the **continueButton**.
-     */
-    
-    func setContinueButton(enabled:Bool) {
-        if enabled {
-            uploadButton.alpha = 1.0
-            uploadButton.isEnabled = true
-        } else {
-            uploadButton.alpha = 0.5
-            uploadButton.isEnabled = false
-        }
-    }
-    
-    @objc func handleUpload() {
-        guard let title = titleField.text else { return }
-        guard let when = whenField.text else { return }
-        guard let time = timeField.text else { return }
-        guard let distance = distanceField.text else { return }
-        guard let pace = paceField.text else { return }
-        
-        setContinueButton(enabled: false)
-        uploadButton.setTitle("", for: .normal)
-        activityView.startAnimating()
-        
-        guard let uid = Auth.auth().currentUser?.uid else { return }
-        let storageRef = Storage.storage().reference().child("user/\(uid)")
-        
-        let metaData = StorageMetadata()
-        metaData.contentType = "user"
+    @IBAction func handleUpload() {
+        guard let userProfile = UserService.currentUserProfile else {return}
+        let postRef = Database.database().reference().child("uploads").childByAutoId()
+
+        let postObject = [
+            "author": [
+                "uid":userProfile.uid,
+                "username":userProfile.username,
+                "photoURL":userProfile.photoURL.absoluteString
+            ],
+            "title": titleField.text,
+            "when": whenField.text,
+            "time": timeField.text,
+            "distance": distanceField.text,
+            "pace": paceField.text,
+            "timestamp": [".sv":"timestamp"]
+            ] as [String:Any]
+
+        postRef.setValue(postObject, withCompletionBlock: { error, postRef in
+            if error == nil {
+                self.dismiss(animated: true, completion: nil)
+            } else {
+                // Handle the error
+            }
+        })
         
     }
     
