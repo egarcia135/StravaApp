@@ -2,8 +2,8 @@
 //  SignUpViewController.swift
 //  CloudFunctions
 //
-//  Created by Robert Canton on 2017-09-13.
-//  Copyright © 2017 Robert Canton. All rights reserved.
+//  Created by Eduardo Garcia on 2020-04-01.
+//  Copyright © 2020 Eduardo Garcia. All rights reserved.
 //
 
 import Foundation
@@ -101,10 +101,6 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         self.dismiss(animated: false, completion: nil)
     }
     
-    /**
-     Adjusts the center of the **continueButton** above the keyboard.
-     - Parameter notification: Contains the keyboardFrame info.
-     */
     
     @objc func keyboardWillAppear(notification: NSNotification){
         
@@ -116,11 +112,6 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         activityView.center = continueButton.center
     }
     
-    /**
-     Enables the continue button if the **username**, **email**, and **password** fields are all non-empty.
-     
-     - Parameter target: The targeted **UITextField**.
-     */
     
     @objc func textFieldChanged(_ target:UITextField) {
         let username = usernameField.text
@@ -133,8 +124,6 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
     
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
-         // Resigns the target textField and assigns the next textField in the form.
 
         switch textField {
         case usernameField:
@@ -153,10 +142,6 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         }
         return true
     }
-    
-    /**
-     Enables or Disables the **continueButton**.
-     */
     
     func setContinueButton(enabled:Bool) {
         if enabled {

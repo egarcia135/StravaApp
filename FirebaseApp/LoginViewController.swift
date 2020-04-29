@@ -2,8 +2,8 @@
 //  LoginViewController.swift
 //  CloudFunctions
 //
-//  Created by Robert Canton on 2017-09-13.
-//  Copyright © 2017 Robert Canton. All rights reserved.
+//  Created by Eduardo Garcia on 2020-04-01.
+//  Copyright © 2020 Eduardo Garcia. All rights reserved.
 //
 
 import Foundation

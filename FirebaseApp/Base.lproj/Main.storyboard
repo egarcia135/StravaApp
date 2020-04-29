@@ -461,10 +461,10 @@
             </objects>
             <point key="canvasLocation" x="4569" y="1695"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Message Controller-->
         <scene sceneID="pDZ-r2-u9X">
             <objects>
-                <tableViewController id="Ptg-IV-abb" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MessageController" id="Ptg-IV-abb" customClass="MessageController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="r6R-DX-pQd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -484,7 +484,14 @@
                             <outlet property="delegate" destination="Ptg-IV-abb" id="AJl-Wp-n8N"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="WcC-8e-Mo8"/>
+                    <navigationItem key="navigationItem" id="WcC-8e-Mo8">
+                        <nil key="title"/>
+                        <barButtonItem key="rightBarButtonItem" image="icons8-create-50" id="Na7-ad-hhC">
+                            <connections>
+                                <action selector="handleNewMessage:" destination="Ptg-IV-abb" id="b3e-gb-8fl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LCU-pe-RVt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -807,6 +814,10 @@
         <image name="message.fill" catalog="system" width="64" height="56"/>
         <image name="plus.circle.fill" catalog="system" width="64" height="60"/>
         <image name="star.fill" catalog="system" width="64" height="58"/>
+        <image name="icons8-create-50" width="50" height="50"/>
+        <image name="message.fill" catalog="system" width="128" height="113"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="userIcon" width="50" height="50"/>
     </resources>
 </document>
