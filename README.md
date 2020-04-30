@@ -25,12 +25,12 @@ An app targeted to runner where they can find fellow runners and conversate.
 
 **Required Must-have Stories**
 
-- [ x ] User can log in using email and password
-- [ x ] User can sign up using email, password and upload avatar photo
+- [x] User can log in using email and password
+- [x] User can sign up using email, password and upload avatar photo
 * As a logged-in, I want to be able to track my miles and stats to see my progress.
-- [ X ] As a logged-in user, I want to be able to send instant messages to my friend.
-- [ X ] As a logged-in user, I can see the whole conversation with my friend.
-- [ X ] As a logged-in user, I create a run
+- [X] As a logged-in user, I want to be able to send instant messages to my friend.
+- [x] As a logged-in user, I can see the whole conversation with my friend.
+- [X] As a logged-in user, I create a run
 * As a logged-in user, I want to like any status that any of my friends posted regarding accomplishments/activities.
 * As a logged-in user, I want to be able to gain “achievements” whenever I do specific tasks.
 * As a logged-in user, I want to be able to update my profile.
