@@ -624,7 +624,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="76a-gy-Les"/>
                     </view>
-                    <navigationItem key="navigationItem" id="U21-wo-YW7">
+                    <navigationItem key="navigationItem" title="Home" id="U21-wo-YW7">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="plus.circle.fill" catalog="system" id="3ve-BT-b9x">
                             <connections>
                                 <segue destination="8zw-Mf-KS0" kind="presentation" id="UAy-eq-B5q"/>
