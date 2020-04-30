@@ -1,4 +1,4 @@
-# Strava
+# SlavaGo
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -100,7 +100,6 @@ Status
 | Objectid | string | unique id for user post
 | Content | string | content of status
 | Author | pointer to user | author of status
-| likes | number | number of likes
 | createdOn | DateTime | creation time
 | updatedOn | DateTime | updated time
 
