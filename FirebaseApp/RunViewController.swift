@@ -3,7 +3,7 @@
 //  FirebaseApp
 //
 //  Created by William Ordaz on 4/21/20.
-//  Copyright © 2020 Robert Canton. All rights reserved.
+//  Copyright © 2020 Eduardo Garcia. All rights reserved.
 //
 
 import Foundation
