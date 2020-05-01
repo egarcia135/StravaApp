@@ -7,6 +7,7 @@
 4. [Schema](#Schema)
 5. [App-Pitch-Presentation](#App-Pitch-Presentation)
 6. [Authors](#Authors)
+7. [Future Emplementations](#Future Emplementations)
 
 ## Overview
 ### Description
