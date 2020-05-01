@@ -146,6 +146,7 @@ Upload Run
 
 ### Sign-Up/Login
 
+#### Walkthrough of the following user stories:
 - [x] User can log in using email and password
 - [x] User can sign up using email, password and upload avatar photo
 <img src='http://g.recordit.co/AASjQtD5Tk.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
