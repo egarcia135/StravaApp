@@ -7,7 +7,7 @@
 4. [Schema](#Schema)
 5. [App-Pitch-Presentation](#App-Pitch-Presentation)
 6. [Authors](#Authors)
-7. [Future Emplementations](#Future Emplementations)
+7. [Future Emplementations](#Future-Emplementations)
 
 ## Overview
 ### Description
@@ -178,7 +178,7 @@ Link to our slideshow: <a href="https://docs.google.com/presentation/d/1350gQv4J
 * Eduardo Garcia - <a href="https://github.com/egarcia135" target="_blank">egarcia135</a>
 * Eduardo Garcia - <a href="https://github.com/weordaz" target="_blank">weordaz</a>
 
-## Future Emplementations
+## Future-Emplementations
 * Connecting specifically with Garmin to allow users to see real time posts without having to manual upload.
 * Will be able to see where they ran by implementing a map to their posts.
 * Send image messages
