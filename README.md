@@ -167,3 +167,5 @@ Upload Run
 - [X] As a logged-in user, I can create a new run
 <img src='http://g.recordit.co/Lr3uwiXsB1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+## App-Pitch-Presentation
+Link to our Slideshow: <a href="https://docs.google.com/presentation/d/1350gQv4JotZXGFgQBTsFjrFjYaGA0-SRtwOb0bJmhx8/edit#slide=id.g76d1842c48_1_3" target="_blank">SlavaGo</a>  
