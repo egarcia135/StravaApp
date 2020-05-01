@@ -149,13 +149,13 @@ Upload Run
 #### Walkthrough of the following user stories:
 - [x] User can log in using email and password
 - [x] User can sign up using email, password and upload avatar photo
-<div align="left">
+.pull-left[
 <img src="http://g.recordit.co/Sd1sOtg6OI.gif" title='Video Walkthrough' width='' alt='Video Walkthrough'>
-</div>
+]
 
-<div align="right">
+.pull-right[
 <img src="http://g.recordit.co/MJjAYR7jvM.gif" title='Video Walkthrough' width='' alt='Video Walkthrough'>
-</div>
+]
 
 
 <img src='http://g.recordit.co/AASjQtD5Tk.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
