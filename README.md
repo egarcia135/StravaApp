@@ -153,7 +153,7 @@ Upload Run
 <img src="http://g.recordit.co/Sd1sOtg6OI.gif" title='Video Walkthrough' width='' alt='Video Walkthrough'>
 </div>
 
-<div align="center">
+<div align="right">
 <img src="http://g.recordit.co/MJjAYR7jvM.gif" title='Video Walkthrough' width='' alt='Video Walkthrough'>
 </div>
 
