@@ -171,7 +171,7 @@ Upload Run
 <img src='http://g.recordit.co/Lr3uwiXsB1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Video Walkthrough Of SlavaGo
-<video src="https://player.vimeo.com/video/413807897" width="320" height="200" controls preload></video>
+<video src="Main.mp4" width="320" height="200" controls preload></video>
 
 ## App-Pitch-Presentation
 Link to our slideshow: <a href="https://docs.google.com/presentation/d/1350gQv4JotZXGFgQBTsFjrFjYaGA0-SRtwOb0bJmhx8/edit#slide=id.g76d1842c48_1_3" target="_blank">SlavaGo</a>  
