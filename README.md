@@ -165,5 +165,5 @@ Upload Run
 
 #### Walkthrough of the following user stories:
 - [X] As a logged-in user, I can create a new run
-<img src='http://g.recordit.co/wQIJGn1PCo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/Lr3uwiXsB1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
