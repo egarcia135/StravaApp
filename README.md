@@ -154,7 +154,16 @@ Upload Run
     <img src="http://g.recordit.co/MJjAYR7jvM.gif" title='Video Walkthrough' width='' alt='Video Walkthrough'>
 </div>
 
+### Sending Messages
 
-<img src='http://g.recordit.co/AASjQtD5Tk.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-<img src='http://g.recordit.co/wQIJGn1PCo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+#### Walkthrough of the following user stories:
+- [X] As a logged-in user, I want to be able to send instant messages to my friend.
+- [x] As a logged-in user, I can see the whole conversation with my friend.
 <img src='http://g.recordit.co/cgS1Z0RHUP.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+### Uploading New Runs
+
+#### Walkthrough of the following user stories:
+- [X] As a logged-in user, I can create a new run
+<img src='http://g.recordit.co/wQIJGn1PCo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
