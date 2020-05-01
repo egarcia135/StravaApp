@@ -2,9 +2,11 @@
 
 ## Table of Contents
 1. [Overview](#Overview)
-1. [Product Spec](#Product-Spec)
-1. [Wireframes](#Wireframes)
-2. [Schema](#Schema)
+2. [Product Spec](#Product-Spec)
+3. [Wireframes](#Wireframes)
+4. [Schema](#Schema)
+5. [App-Pitch-Presentation](#App-Pitch-Presentation)
+6. [Authors](#Authors)
 
 ## Overview
 ### Description
@@ -168,4 +170,9 @@ Upload Run
 <img src='http://g.recordit.co/Lr3uwiXsB1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## App-Pitch-Presentation
-Link to our Slideshow: <a href="https://docs.google.com/presentation/d/1350gQv4JotZXGFgQBTsFjrFjYaGA0-SRtwOb0bJmhx8/edit#slide=id.g76d1842c48_1_3" target="_blank">SlavaGo</a>  
+Link to our slideshow: <a href="https://docs.google.com/presentation/d/1350gQv4JotZXGFgQBTsFjrFjYaGA0-SRtwOb0bJmhx8/edit#slide=id.g76d1842c48_1_3" target="_blank">SlavaGo</a>  
+
+## Authors
+
+* Eduardo Garcia - <a href="https://github.com/egarcia135" target="_blank">egarcia135</a>
+* Eduardo Garcia - <a href="https://github.com/weordaz" target="_blank">weordaz</a>
