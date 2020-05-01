@@ -176,3 +176,12 @@ Link to our slideshow: <a href="https://docs.google.com/presentation/d/1350gQv4J
 
 * Eduardo Garcia - <a href="https://github.com/egarcia135" target="_blank">egarcia135</a>
 * Eduardo Garcia - <a href="https://github.com/weordaz" target="_blank">weordaz</a>
+
+## Future Emplementations
+* Connecting specifically with Garmin to allow users to see real time posts without having to manual upload.
+* Will be able to see where they ran by implementing a map to their posts.
+* Send image messages
+* Creating a profile that will show personally achievements, followers/followings, achievements, and weekly mileage.
+* Adding videos and photo to your run
+* Adding likes, comments, and shared functionalities.
+* Creating a notifications bar allowing the user to see who liked, commented, or shared their run.
