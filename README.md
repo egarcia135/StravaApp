@@ -150,7 +150,7 @@ Upload Run
 - [x] User can log in using email and password
 - [x] User can sign up using email, password and upload avatar photo
 .pull-left[
-<img src="http://g.recordit.co/Sd1sOtg6OI.gif" img src="http://g.recordit.co/MJjAYR7jvM.gif" title='Video Walkthrough' width='' alt='Video Walkthrough'>
+<img src="http://g.recordit.co/Sd1sOtg6OI.gif, http://g.recordit.co/MJjAYR7jvM.gif" title='Video Walkthrough' width='' alt='Video Walkthrough'>
 ]
 
 .pull-right[
