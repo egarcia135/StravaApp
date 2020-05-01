@@ -59,8 +59,7 @@ An app targeted to runner where they can find fellow runners and conversate.
 **Tab Navigation** (Tab to Screen)
 
 * Home
-* Profile
-* Notifications
+* Upload Run
 * Messages
 
 **Flow Navigation** (Screen to Screen)
@@ -68,10 +67,13 @@ An app targeted to runner where they can find fellow runners and conversate.
 * Landing Page
    * Login Screen
    * Sign Up
-* Home/Feed
+* Home
    * Profile
    * My Notifications
    * Notifications
+* Messages
+   * My Messages
+   * Messages
 *Create Run
 
 ## Wireframes
@@ -118,22 +120,6 @@ Message
 | avatar | pointer to user | image of sender
 | time | DateTime | Time of message sent.
 
-Profile
-| Property | Type | Description |
-| ------ | ------ | ------ |
-| Objectid | pointer to parse object| pointer to user
-| avatar | pointer to parse object | pointer to user
-| email | pointer to parse object | pointer to user
-| likes | array | array of strings
-|location | string |location of user
-| bio | string | quick bio
-
-Notification
-| Property | Type | Description |
-| ------ | ------ | ------ |
-| Objectid |string| unique notification id
-| description | string | desc of notification
-
 Friend
 | Property | Type | Description |
 | ------ | ------ | ------ |
@@ -150,10 +136,6 @@ Profile
 - (UpdatePut) Update user avatar
 - (Read/Get) Query logged user’s friends 
 
-My Notifications
-- (Read/Get) Query notifications
-- (Delete) Delete notification
-
 Create an account
 - (Create/Post) Create a new user
 
@@ -161,6 +143,10 @@ Upload Run
 - (Create/post) Create a new run
 
 ## App Walkthrough
+
+### Sign-Up/Login
+- [x] User can log in using email and password
+- [x] User can sign up using email, password and upload avatar photo
 <img src='http://g.recordit.co/AASjQtD5Tk.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='http://g.recordit.co/wQIJGn1PCo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='http://g.recordit.co/cgS1Z0RHUP.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
