@@ -5,6 +5,7 @@
 2. [Product Spec](#Product-Spec)
 3. [Wireframes](#Wireframes)
 4. [Schema](#Schema)
+5. [App Walkthrough](#App-Walkthrough)
 5. [App-Pitch-Presentation](#App-Pitch-Presentation)
 6. [Authors](#Authors)
 7. [Future Emplementations](#Future-Emplementations)
